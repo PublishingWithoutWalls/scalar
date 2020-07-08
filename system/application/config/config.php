@@ -246,7 +246,8 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = (getenv('SCALAR_ENCRYPTION_KEY') ? getenv('SCALAR_ENCRYPTION_KEY') : '');
+$config['encryption_key'] = '-340woifkP08OIHU09rwegopjdsv';
+
 
 /*
 |--------------------------------------------------------------------------
