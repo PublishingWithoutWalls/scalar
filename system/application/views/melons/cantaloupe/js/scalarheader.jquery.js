@@ -202,7 +202,19 @@ getPropertyValue:function(a){return this[a]||""},item:function(){},removePropert
             //Pop the title link DOM element off for a minute - we'll use this again later on.
             var title_link = base.$el.find('#book-title').addClass('navbar-link').detach().attr('id','').addClass('book-title');
             //Handle the internal structure of the navbar now.
-            var navbar_html  =  '<div class="container-fluid">'+
+            var navbar_html  =  
+                                    '<div class="iopn_header_common iopn_header_scalar">'+
+                                        '<img usemap="#lib-shared-header-wordmark-online__map__small" src="'+ base.options.root_url +'/images/library">'+
+                                        '</img>'+
+                                        '<map name="lib-shared-header-wordmark-online__map__small">' +
+                                                '<area shape="rect" coords="0,0,15,20" href="https://illinois.edu" alt="Block I">'+
+                                                '<area shape="rect" coords="25,0,200,20" href="https://www.library.illinois.edu" alt="Illinois Library">'+
+                                        '</map>'+
+                                        '<a id="iopn_mark" href="https://iopn.library.illinois.edu">'+
+                                                '<img src="'+ base.options.root_url +'/images/iopn" alt="Illinois Open Publishing Network">'+
+                                        '</a>'+
+                                '</div>'+
+                               '<div class="container-fluid">'+
                                     '<div class="navbar-header">'+
                                         '<span class="navbar-text navbar-left pull-left title_wrapper visible-xs"></span>'+
                                         '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ScalarHeaderMenu">'+

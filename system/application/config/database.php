@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = (getenv('SCALAR_DB_HOSTNAME') ? getenv('SCALAR_DB_HOSTNAME') : 'localhost');
-$db['default']['username'] = (getenv('SCALAR_DB_USERNAME') ? getenv('SCALAR_DB_USERNAME') : '');
-$db['default']['password'] = (getenv('SCALAR_DB_PASSWORD') ? getenv('SCALAR_DB_PASSWORD') : '');
-$db['default']['database'] = (getenv('SCALAR_DB_DATABASE') ? getenv('SCALAR_DB_DATABASE') : '');
+$db['default']['hostname'] = 'scp-db.library.illinois.edu';
+$db['default']['username'] = 'scalar-user';
+$db['default']['password'] = 'GLm6cCYLbSwhiLr8WOdV';
+$db['default']['database'] = 'scalar-sandbox';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = 'scalar_db_';  // Best not to change this
 $db['default']['pconnect'] = FALSE;
